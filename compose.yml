@@ -1,0 +1,10 @@
+version: '3'
+services:
+  mysql:
+    image: mysqlimage
+    container_name: mysql
+    command: "/usr/bin/mysqld_safe"
+    hostname: mysql
+    ports:
+      - "8080:3306"
+    
